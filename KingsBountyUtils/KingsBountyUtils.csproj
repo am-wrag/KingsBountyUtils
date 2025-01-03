@@ -21,7 +21,7 @@
       <None Update="README.md">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="ItemToSearchFileName.txt">
+      <None Update="ItemToSearch.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>

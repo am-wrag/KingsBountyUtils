@@ -60,7 +60,7 @@ public class SaveFileItemSearch
 
     private static IEnumerable<(string itemName, string? itemPriority, string? itemNote)> GetItemNameAndPriority(GameSaveSettings saveSettings)
     {
-        var itemToSearchFilePath = $@"{saveSettings.SaveUtilFolder}\{saveSettings.ItemToSearchFileName}";
+        var itemToSearchFilePath = $@"{Directory.GetCurrentDirectory()}\{saveSettings.ItemToSearchFileName}";
         var itemsToSearch = File.ReadAllLines(itemToSearchFilePath);
         foreach (var item in itemsToSearch)
         {
